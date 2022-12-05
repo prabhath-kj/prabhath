@@ -15,7 +15,11 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
+        <script
+        async
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+        </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -163,6 +167,7 @@
         </section>
         <!-- //skills section -->
 
+
         <!-- PORTFOLIO -->
 
         <section id="portfolio" class=" py-5">
@@ -185,7 +190,7 @@
                 <div class="card-flyer">
                   <div class="text-box">
                     <div class="image-box">
-                      <img src="assets/img/portfolio/KFC.png" alt="" />
+                      <img src="assets/img/portfolio/KFC.png" alt="kfc image" />
                     </div>
                     <div class="text-container">
                       <h6>KFC</h6>
@@ -205,7 +210,7 @@
                     <div class="image-box">
                       <img
                         src="assets/img/portfolio/ONE CARD.png"
-                        alt=""
+                        alt="one card image"
                       />
                     </div>
                     <div class="text-container">
@@ -225,7 +230,7 @@
                     <div class="image-box">
                       <img
                         src="assets/img/portfolio/SLICE.png"
-                        alt=""
+                        alt="slice image"
                       />
                     </div>
   
@@ -247,7 +252,7 @@
                     <div class="image-box">
                       <img
                         src="assets/img/portfolio/PORTFOLIO.png"
-                        alt=""
+                        alt="portfolio image"
                       />
                     </div>
                     <div class="text-container">
@@ -280,55 +285,30 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                       
+                        <form id="gform" >
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="name"  />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="form-error text-danger"></div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com"/>
                                 <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div class="form-error text-danger"></div>
+                               
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
+                           
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <div class="form-error text-danger"></div>     
+                            </div>   
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
@@ -344,7 +324,7 @@
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/prabhath_k_j/" target="_blank"><i class="fab fa-fw fa-brands fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/prabhath-kj/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:view.prabhathkj4@gmail.com" target="_blank"><i class="fab fa-fw fa fa-envelope"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:prabhathkj4@gmail.com" target="_blank"><i class="fab fa-fw fa fa-envelope"></i></a>
                     </div>
                 
                 </div>
