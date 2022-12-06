@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // form validation
 
 const form = document.getElementById("gform");
-const fullname = document.getElementById("name");
+const fullname = document.getElementById("fullname");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 
@@ -102,7 +102,7 @@ const onSubmitForm = (e) => {
     !message.classList.contains("error")
   ) {
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbyl73mY7g9SoQ-EY_TvU3bAOnnu-l5aN85gdJF6lTsadSVXCplOdnI2vtZQGPx8vEZR/exec",
+      url: "https://script.google.com/macros/s/AKfycbwz3X4NO7TIPPu4rue7SGNpXZ12rHMs2TnbuXn3698thm-jPKrtAgjOPEMa2BejNjqv/exec",
       data: $("#gform").serialize(),
       method: "post",
       success: function (response) {

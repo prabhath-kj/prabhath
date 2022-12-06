@@ -8,6 +8,9 @@
         <meta name="author" content="" />
         <title  >Prabhath KJ</title>      
         <link rel="icon" type="image/x-icon" href="assets/icone.png" />
+
+
+        
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -289,21 +292,33 @@
                         <form id="gform" >
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="name"  />
-                                <label for="name">Full name</label>
+                                <input type="text"
+                                value=""
+                                class="form-control"
+                                name="fullname"
+                                id="fullname"
+                                placeholder="name" />
+                                <label for="fullname">Full name</label>
                                 <div class="form-error text-danger"></div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com"/>
-                                <label for="email">Email address</label>
+                              <input
+                              type="email"
+                              value=""
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="name@example.com"
+                            />
+                              <label for="email">Email address</label>
                                 <div class="form-error text-danger"></div>
                                
                             </div>
                            
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="form-error text-danger"></div>     
                             </div>   
